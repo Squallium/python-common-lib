@@ -1,0 +1,24 @@
+[project]
+name = "python-common-lib"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Squallium",email = "709429+Squallium@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fire (>=0.7.1,<0.8.0)",
+    "rich (>=14.1.0,<15.0.0)",
+    "pyfiglet (>=1.0.4,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.4.1"
+pytest-cov = "^6.2.1"
+
